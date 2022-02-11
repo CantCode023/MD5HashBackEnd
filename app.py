@@ -5,11 +5,13 @@ import hashlib
 import smtplib
 import requests
 import json
+from flask_cors import CORS
 
 usr = "frostbot023@gmail.com"
 pswd = "Apakah?##5"
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route("/home")
 def home():
